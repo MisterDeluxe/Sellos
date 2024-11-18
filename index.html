@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellos Ibañez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sellos Ibañez</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('sobre-nosotros')">Sobre Nosotros</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('productos')">Productos</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('galeria')">Galería</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('testimonios')">Testimonios</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="seccion">
+            <h2>Bienvenido a Sellos Ibañez</h2>
+            <p>Creando sellos de madera personalizados para todos tus proyectos creativos.</p>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros" class="seccion" style="display:none;">
+            <h2>Sobre Nosotros</h2>
+            <p>En Sellos Ibañez, nos apasiona la creación de sellos de madera de alta calidad. Ofrecemos productos personalizados para negocios, eventos y manualidades.</p>
+        </section>
+
+       
+       <!-- Sección Productos -->
+        <section id="productos" class="seccion" style="display:none;">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="images/sello1.jpg" alt="Sello de Logo Empresarial">
+                <h3>Sello de Madera Clásico</h3>
+                <p>Ideal para personalizar tus documentos con un toque tradicional y elegante.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/sello2.jpg" alt="Sello de Bodas Personalizado">
+                <h3>Sello Personalizado de Bodas</h3>
+                <p>Un detalle único para hacer que tus invitaciones de boda sean inolvidables.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/sello3.jpg" alt="Sello para Manualidades">
+                <h3>Sello Artesanal para Manualidades</h3>
+                <p>Perfecto para proyectos creativos y manualidades personalizadas.</p>
+            </div>
+            </div>
+        </section>
+
+
+        
+        <!-- Sección Galería -->
+        <section id="galeria" class="seccion" style="display:none;">
+            <h2>Galería</h2>
+             <div class="gallery-grid">
+                <img src="images/imagen1.jpg" alt="Imagen 1" class="gallery-image">
+                <img src="images/imagen2.jpg" alt="Imagen 2" class="gallery-image">
+                <img src="images/imagen3.jpg" alt="Imagen 3" class="gallery-image">
+                <img src="images/imagen4.jpg" alt="Imagen 4" class="gallery-image">
+             </div>
+         </section>
+
+
+        <!-- Sección Testimonios -->
+        <section id="testimonios" class="seccion" style="display:none;">
+            <h2>Testimonios</h2>
+            <p>¡Nuestros clientes aman los sellos personalizados! Aquí algunos comentarios:</p>
+            <blockquote>"Excelente calidad y servicio. Los sellos fueron un éxito en nuestra boda." - Carla R.</blockquote>
+            <blockquote>"Perfecto para mi negocio, les encantó el logo en los documentos." - Jorge M.</blockquote>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion" style="display:none;">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sellos Ibañez - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
